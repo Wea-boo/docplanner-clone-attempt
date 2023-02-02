@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Work+Sans:wght@300;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+body {
+    margin: 0;
+}
+
+h1,h2,h3{
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+nav {
+    height: 70px;
+    width: 100%;
+    top: 0;
+    margin: 0 auto;
+    padding: 0;
+    position: sticky;
+    background-color: rgba(255, 255, 255, 0.812);
+
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+nav div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 600px) {
+    body.scrolling nav {
+      position: fixed;
+      box-shadow: -2px 10px 0 rgb(0 0 0 / 15%);
+    }
+  }
+nav::after,
+nav::before{
+    content: "";
+    display: table;
+}
+
+#nav-logo {
+    height: 30px;
+}
+#nav-options {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+.banner-text{
+    display: flex;
+    gap: 20px;
+}
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 33px auto;
+    max-width: 1000px;
+}
+#banner img {
+    height: 40px;
+    width: 39px;
+}
+#banner h1{
+    font-size: 34px;
+    font-weight: 300;
+}
+#banner p {
+    font-weight: 400;
+    color: #747474;
+}
+#service-cards {
+    display: flex;
+    margin: 60px auto;
+    max-width: 1025px;
+
+}
+
+#card-1,
+#card-2,
+#card-3 {
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    border-radius: 10px;
+
+
+}
+
+#card-1 img,
+#card-2 img,
+#card-3 img {
+    height: 24px;
+    width: 24px;
+}
+
+#card-1 h1,
+#card-2 h1,
+#card-3 h1,
+#card-1 h2,
+#card-2 h2,
+#card-3 h2,
+#card-1 p,
+#card-2 p,
+#card-3 p {
+    color: white;
+}
+
+#card-1 h2,
+#card-2 h2,
+#card-3 h2 {
+    margin: 0;
+    font-weight: 300;
+}
+#card-1 h1,
+#card-2 h1,
+#card-3 h1 {
+    margin: 5px 0;
+    font-weight: 400;
+}
+
+#card-1 {
+    background-color: #00ccb1;
+}
+#card-2 {
+    background-color: #3d83df;
+}
+#card-3 {
+    background-color: #1b2734;
+}
+
+#associates {
+    display: flex;
+}
+#associate-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+#associate-list li{
+    width: 164px;
+}
+
+#presentation {
+    background-color: #e5faf8;
+    display: flex;
+    margin: 50px auto;
+}
+
+#left-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#left-side img {
+    position: relative;
+    width: 456px;
+    height: 435px;
+    top: 5%;
+}
+
+#right-side {
+    width: 50%;
+}
+
+.stat-card {
+    height: 250px;
+}
